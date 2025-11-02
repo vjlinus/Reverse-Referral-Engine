@@ -23,8 +23,9 @@ Client sends positive email → Happiness score +5 → Score reaches 25 →
 Wait 1 day → Send personalized referral request → Reset score
 ```
 
-<img width="27" height="27" alt="image" src="https://github.com/user-attachments/assets/09fbcbcc-cac1-4e10-83a2-6825d8828202" /> 
-Key Insight: Most businesses ask for referrals randomly or never ask at all. Asks for referrals at peak client satisfaction, not randomly.
+
+## <img width="27" height="27" alt="image" src="https://github.com/user-attachments/assets/09fbcbcc-cac1-4e10-83a2-6825d8828202" /> Key Insight: 
+Most businesses ask for referrals randomly or never ask at all. Asks for referrals at peak client satisfaction, not randomly.
 
 ---
 
@@ -62,12 +63,10 @@ Track account satisfaction and identify upsell opportunities.
 
 ## 🏗️ Architecture
 
-### System Components
-
 ```
 ┌─────────────────────────────────────────────────────┐
-│           CLIENT INTERACTION                         │
-│         (Emails, Milestones)                         │
+│              CLIENT INTERACTION                     │
+│                                                     │
 └────────────────────┬────────────────────────────────┘
                      │
          ┌───────────▼──────────┐
@@ -89,10 +88,10 @@ Track account satisfaction and identify upsell opportunities.
          └───────────┬──────────┘
                      │
          ┌───────────▼──────────┐
-         │   ZAPIER TABLES      │
-         │  Activity Log        │
+         │   Zapier Tables      │
+         │   Activity Log       │
          └──────────────────────┘
-
+```
 
 # 🔒 Privacy & Compliance
 
@@ -100,3 +99,36 @@ Track account satisfaction and identify upsell opportunities.
 - Client data stored in your Zapier tables 
 - GDPR compliant (data under your control)
 - No PII exposed to third parties
+
+- ## 📊 Data Model
+
+### Zapier Table: "Client Happiness Tracker"
+
+| Field Name | Type | Description |
+|------------|------|-------------|
+| `Client Name` | Text | Client/company name |
+| `Client Email` | Email | Primary contact email |
+| `Current Happiness Score` | Number | Accumulated satisfaction points |
+| `Last Score Update Date` | Date | Most recent score change |
+| `Last Referral Request Date` | Date | When we last asked for referral |
+| `Total Referrals Given` | Number | Count of referrals from this client |
+| `Notes` | Text | Additional context |
+
+### Zapier Database: "Referral Log"
+
+| Column | Description |
+|--------|-------------|
+| Date | Timestamp of event |
+| Client Name | Who triggered the event |
+| Trigger Type | "Positive Email" or "Referral Request Sent" |
+| Score Before | Happiness score before update |
+| Score After | Happiness score after update |
+| Referral Requested | Yes/No |
+| Referrals Received | Count |
+
+## 📎 Author
+**Jason Linus**  
+Automation & GTM Engineer  
+[https://www.linkedin.com/in/jason-linus-7120a51/] | [Portfolio](https://nifty-yak-ffd.notion.site/Jason-Linus-8c81e08090a74a9ca2d20287693bebe9?pvs=74)
+
+```
