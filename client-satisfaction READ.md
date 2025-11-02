@@ -23,7 +23,8 @@ Client sends positive email → Happiness score +5 → Score reaches 25 →
 Wait 1 day → Send personalized referral request → Reset score
 ```
 
-**Key Insight:** Asks for referrals at peak client satisfaction, not randomly.
+<img width="27" height="27" alt="image" src="https://github.com/user-attachments/assets/09fbcbcc-cac1-4e10-83a2-6825d8828202" /> 
+Key Insight: Most businesses ask for referrals randomly or never ask at all. Asks for referrals at peak client satisfaction, not randomly.
 
 ---
 
@@ -65,7 +66,7 @@ Track account satisfaction and identify upsell opportunities.
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│                   CLIENT INTERACTION                 │
+│           CLIENT INTERACTION                         │
 │         (Emails, Milestones)                         │
 └────────────────────┬────────────────────────────────┘
                      │
