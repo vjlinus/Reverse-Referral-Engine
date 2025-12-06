@@ -67,7 +67,7 @@ Track account satisfaction and identify upsell opportunities.
 **[View Live Workflow →](https://zapier.com/app/canvas/public/01ae7cd3-b02f-4de0-9728-34519874a207)**
 
 *Interactive canvas showcasing AI-powered referral engine workflows*
-         └──────────────────────┘
+         
 ```
 # 🔒 Privacy & Compliance
 
