@@ -67,4 +67,46 @@ Track account satisfaction and identify upsell opportunities.
 **[View Live Workflow →](https://zapier.com/app/canvas/public/01ae7cd3-b02f-4de0-9728-34519874a207)**
 
 *Interactive canvas showcasing AI-powered referral engine workflows*
+
+```
+# 🔒 Privacy & Compliance
+
+- No external APIs or data sharing
+- Client data stored in your Zapier tables 
+- GDPR compliant (data under your control)
+- No PII exposed to third parties
+
+- ## 📊 Data Model
+
+### Zapier Table: "Client Happiness Tracker"
+
+| Field Name | Type | Description |
+|------------|------|-------------|
+| `Client Name` | Text | Client/company name |
+| `Client Email` | Email | Primary contact email |
+| `Current Happiness Score` | Number | Accumulated satisfaction points |
+| `Last Score Update Date` | Date | Most recent score change |
+| `Last Referral Request Date` | Date | When we last asked for referral |
+| `Total Referrals Given` | Number | Count of referrals from this client |
+| `Notes` | Text | Additional context |
+
+### Zapier Database: "Referral Log"
+
+| Column | Description |
+|--------|-------------|
+| Date | Timestamp of event |
+| Client Name | Who triggered the event |
+| Trigger Type | "Positive Email" or "Referral Request Sent" |
+| Score Before | Happiness score before update |
+| Score After | Happiness score after update |
+| Referral Requested | Yes/No |
+| Referrals Received | Count |
+
+## 📎 Author
+**Jason Linus**  
+Automation & GTM Engineer  
+[https://www.linkedin.com/in/jason-linus-7120a51/] | [Portfolio](https://nifty-yak-ffd.notion.site/Jason-Linus-8c81e08090a74a9ca2d20287693bebe9?pvs=74)
+
+
+
          
